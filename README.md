@@ -1,9 +1,10 @@
 # ADS-507-Data-Engineering
 
 ## Repository Contents:
+_Jupyter Notebook_
 * [Jupyter Notebook](https://raw.githubusercontent.com/nlee98/ADS-507-Data-Engineering/main/ADS-507_FinalProject.ipynb) (for running the pipeline - extracting and loading raw CSV files to a MySQL server)
 
-  Raw CSV Files:
+ _Raw CSV Files:_
 * [Invoices.CSV](https://raw.githubusercontent.com/nlee98/ADS-507-Data-Engineering/main/Invoices.csv)
 * [OrderLeads.CSV](https://raw.githubusercontent.com/nlee98/ADS-507-Data-Engineering/main/OrderLeads.csv)
 * [SalesTeam.CSV](https://raw.githubusercontent.com/nlee98/ADS-507-Data-Engineering/main/SalesTeam.csv) 
