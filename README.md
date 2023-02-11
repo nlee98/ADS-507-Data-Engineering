@@ -17,15 +17,16 @@ _Jupyter Notebook_
 3. The following transformation are applied to the dataframes:
  * White spaces in column names with multiple words are replaced with underscores (for consistency and to prevent syntax issues).
  * To the invoices dataframe:
-  * The Date and Date_of_Meal fields are converted to Datetime datatypes
-  * Additional timezone information ("+00:00:00") is dropped to standardize all times to UTC timezone.
-  * The hour is extracted from Date_of_Meal and mapped to a part of the day (i.e. Early Morning, Late Morning, Early Afternoon, etc.), and a new field ("Part_of_Day") is created.
+   * The Date and Date_of_Meal fields are converted to Datetime datatypes
+   * Additional timezone information ("+00:00:00") is dropped to standardize all times to UTC timezone.
+   * The hour is extracted from Date_of_Meal and mapped to a part of the day (i.e. Early Morning, Late Morning, Early Afternoon, etc.), and a new field ("Part_of_Day") is created.
   * The number of participants is derived from the Participants column and added as a new column
   * A new dataframe dataframe (customer_order) is created to link every order_id to the participating customer_id(s).
    * A last_updated column is added to represent the date at which the csv file was last imported
  * To the orders dataframe:
-  * The date column is formatted to a date datatype
+   * The date column is formatted to a date datatype
 5. The pipeline attempts to connect to the user's local MySQL server, prompting the user to enter their  MySQL username and password.
+ _Note:_ The pipeline assumes that the server is "localhost" and that the port number is 3306.
 6. The database is created via a try-except command, where the script first tries to drop the database to create it again from scratch; if the database cannot be dropped because it does not already exist, the script will create the database.
 7. Four tables are created for each of the dataframes (invoice, orders, saleslead, and customer_order)
  * For scalability reasons, the invoice table is partitioned by year
