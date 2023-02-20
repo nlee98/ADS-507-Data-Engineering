@@ -27,7 +27,7 @@ _Jupyter Notebook_
    * The date column is formatted to a date datatype
 5. The pipeline attempts to connect to the user's local MySQL server, prompting the user to enter their  MySQL username and password.
  
- _Note:_ The pipeline assumes that the server is "localhost" and that the port number is 3306.
+  _Note:_ The pipeline assumes that the server is "localhost" and that the port number is 3306.
  
 6. The database is created via a try-except command, where the script first tries to drop the database to create it again from scratch; if the database cannot be dropped because it does not already exist, the script will create the database.
 7. Four tables are created for each of the dataframes (invoice, orders, saleslead, and customer_order)
