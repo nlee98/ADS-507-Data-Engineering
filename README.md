@@ -18,6 +18,11 @@ _Executable Python Script_
 4. Let the pipeline run to completion.
 5. _TABLEAUUUUUUUUUUUUUUUUUUUUu_
 
+## Pipeline Monitoring:
+* Print statements, such as "print('Invoice Table Created!)," are included at critical points to confirm that the pipeline is functioning as expected.
+* If a print statement, confirming the cells successful execution, is not printed, the pipeline will stop its execution.
+
+
 ## Pipeline Processes:
 1. The raw CSV files ([Invoices.CSV](https://raw.githubusercontent.com/nlee98/ADS-507-Data-Engineering/main/Invoices.csv), [OrderLeads.CSV](https://raw.githubusercontent.com/nlee98/ADS-507-Data-Engineering/main/OrderLeads.csv), and [SalesTeam.CSV](https://raw.githubusercontent.com/nlee98/ADS-507-Data-Engineering/main/SalesTeam.csv)) are loaded into a Python Jupyter Notebook and converted to Pandas dataframe objects.
 2. General pre-processing steps are taken.
