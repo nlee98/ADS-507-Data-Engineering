@@ -3,11 +3,20 @@
 ## Repository Contents:
 _Jupyter Notebook_
 * [Jupyter Notebook](https://raw.githubusercontent.com/nlee98/ADS-507-Data-Engineering/main/ADS-507_FinalProject.ipynb) (for running the pipeline - extracting and loading raw CSV files to a MySQL server)
-
+_Executable Python Script_
+* [Python Script](https://raw.githubusercontent.com/nlee98/ADS-507-Data-Engineering/main/ADS-507_Final_Notebook.py) (a deployable infrastructure as code (IaC) version of the Jupyter Notebook - for importing the raw CSV Files, transforming the raw files, building a MySQL database and related tables, and loading the transformed data into the newly constructed tables)
  _Raw CSV Files:_
 * [Invoices.CSV](https://raw.githubusercontent.com/nlee98/ADS-507-Data-Engineering/main/Invoices.csv)
 * [OrderLeads.CSV](https://raw.githubusercontent.com/nlee98/ADS-507-Data-Engineering/main/OrderLeads.csv)
 * [SalesTeam.CSV](https://raw.githubusercontent.com/nlee98/ADS-507-Data-Engineering/main/SalesTeam.csv) 
+
+## Pipeline Deployment:
+1. Download either the [Jupyter Notebook](https://raw.githubusercontent.com/nlee98/ADS-507-Data-Engineering/main/ADS-507_FinalProject.ipynb) or [Python Script](https://raw.githubusercontent.com/nlee98/ADS-507-Data-Engineering/main/ADS-507_Final_Notebook.py).
+2. Execute downloaded file in your preferred python environment (Anaconda, VSCode, etc.).
+  *_Note:_ The pipeline assumes that the server is "localhost" and that the port number is 3306. If the server name or port number differs, the script will need to be modified.
+3. When prompted, enter your MySQL username (usually, "root") and your corresponding MySQL password.
+4. Let the pipeline run to completion.
+5. _TABLEAUUUUUUUUUUUUUUUUUUUUu_
 
 ## Pipeline Processes:
 1. The raw CSV files ([Invoices.CSV](https://raw.githubusercontent.com/nlee98/ADS-507-Data-Engineering/main/Invoices.csv), [OrderLeads.CSV](https://raw.githubusercontent.com/nlee98/ADS-507-Data-Engineering/main/OrderLeads.csv), and [SalesTeam.CSV](https://raw.githubusercontent.com/nlee98/ADS-507-Data-Engineering/main/SalesTeam.csv)) are loaded into a Python Jupyter Notebook and converted to Pandas dataframe objects.
