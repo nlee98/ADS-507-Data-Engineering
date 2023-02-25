@@ -49,15 +49,13 @@ _Executable Python Script_
 8. The dataframes are loaded into the MySQL tables via a for loop executing INSERT INTO statements for each row of the dataframes
 9. Transformations:
 * Views:
- * Average Meal Price: Average meal price by type of meal
- * Average Participants: Average number of participants by meal type
- * Company Metrics: For each company, the total amount and average amount of each invoice monthly are shown for each meal (and displaying their respective meal). In addition, the year-to-date amount collected and yearly total are presented.
- * Customer Purchases: Customer_Name, Part_of_Day, Company_Name, Number_of_Purchases, Total_Spent
- * Customer Stats: total number of orders by each customer, total amount each customer spent, and the average amount each spent
-  * Customer_stats View: A view of customer statistics is given (columns: customer_name, total_spent, avg_spent)
- * Difference Days: Difference in days between the date of meal and date the order was placed
- * Percent Converted: Shows the number of orders for every company and the total converted (as a sum and proportion) and not converted to an order, as a sum.
- * Sales by Year: Number of invoices each year
- * Sales Rep Performance: Sales_Rep, Sales_Rep_Id, Company_Name, Company_Id, Profit_by_Sales_Rep
- * Total Sales: Total sales by type of meal price for each year
-
+   * Average Meal Price: Average meal price by type of meal
+   * Average Participants: Average number of participants by meal type
+   * Company Metrics: For each company, the total amount and average amount of each invoice monthly are shown for each meal (and displaying their respective meal). In addition, the year-to-date amount collected and yearly total are presented.
+   * Customer Purchases: Customer_Name, Part_of_Day, Company_Name, Number_of_Purchases, Total_Spent
+   * Customer Stats: total number of orders by each customer, total amount each customer spent, and the average amount each spent
+   * Difference Days: Difference in days between the date of meal and date the order was placed
+   * Percent Converted: Shows the number of orders for every company and the total converted (as a sum and proportion) and not converted to an order, as a sum.
+   * Sales by Year: Number of invoices each year
+   * Sales Rep Performance: Sales_Rep, Sales_Rep_Id, Company_Name, Company_Id, Profit_by_Sales_Rep
+   * Total Sales: Total sales by type of meal price for each year
