@@ -16,7 +16,7 @@ _Executable Python Script_
   *_Note:_ The pipeline assumes that the server is "localhost" and that the port number is 3306. If the server name or port number differs, the script will need to be modified.
 3. When prompted, enter your MySQL username (usually, "root") and your corresponding MySQL password.
 4. Let the pipeline run to completion.
-5. _TABLEAUUUUUUUUUUUUUUUUUUUUu_
+5. [Tableau Dashboard](https://public.tableau.com/app/profile/christine1435/viz/WebTrafficDashboardDigitalMarketingVOTD_16774150755110/Performance?publish=yes)
 
 ## Pipeline Monitoring:
 * Print statements, such as "print('Invoice Table Created!)," are included at critical points to confirm that the pipeline is functioning as expected.
