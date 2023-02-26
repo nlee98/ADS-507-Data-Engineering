@@ -9,6 +9,7 @@ _Executable Python Script_
 * [Invoices.CSV](https://raw.githubusercontent.com/nlee98/ADS-507-Data-Engineering/main/Invoices.csv)
 * [OrderLeads.CSV](https://raw.githubusercontent.com/nlee98/ADS-507-Data-Engineering/main/OrderLeads.csv)
 * [SalesTeam.CSV](https://raw.githubusercontent.com/nlee98/ADS-507-Data-Engineering/main/SalesTeam.csv) 
+* [Tableau Dashboard](https://public.tableau.com/app/profile/christine1435/viz/WebTrafficDashboardDigitalMarketingVOTD_16774150755110/Performance?publish=yes) and a packaged Tableau Workbook
 
 ## Pipeline Deployment:
 1. Download either the [Jupyter Notebook](https://raw.githubusercontent.com/nlee98/ADS-507-Data-Engineering/main/ADS-507_Final_Notebook.ipynb) or [Python Script](https://raw.githubusercontent.com/nlee98/ADS-507-Data-Engineering/main/ADS-507_Final_Notebook.py).
@@ -16,11 +17,11 @@ _Executable Python Script_
   *_Note:_ The pipeline assumes that the server is "localhost" and that the port number is 3306. If the server name or port number differs, the script will need to be modified.
 3. When prompted, enter your MySQL username (usually, "root") and your corresponding MySQL password.
 4. Let the pipeline run to completion.
-5. [Tableau Dashboard](https://public.tableau.com/app/profile/christine1435/viz/WebTrafficDashboardDigitalMarketingVOTD_16774150755110/Performance?publish=yes)
+5. To view an example [Tableau Dashboard](https://public.tableau.com/app/profile/christine1435/viz/WebTrafficDashboardDigitalMarketingVOTD_16774150755110/Performance?publish=yes) that can be created from the output, click on the Tableau link here, or download the Tableau workbook above.
 
 ## Pipeline Monitoring:
 * Print statements, such as "print('Invoice Table Created!)," are included at critical points to confirm that the pipeline is functioning as expected.
-* If a print statement, confirming the cells successful execution, is not printed, the pipeline will stop its execution.
+* If a print statement, confirming the cells successful execution, is not printed, the pipeline will stop its execution and display an error message.
 
 
 ## Pipeline Processes:
@@ -47,7 +48,7 @@ _Executable Python Script_
 7. Four tables are created for each of the dataframes (invoice, orders, saleslead, and customer_order)
  * For scalability reasons, the invoice table is partitioned by year
 8. The dataframes are loaded into the MySQL tables via a for loop executing INSERT INTO statements for each row of the dataframes
-9. Transformations:
+9. SQL Transformations:
 * Views:
    * Average Meal Price: Average meal price by type of meal.
    * Average Participants: Average number of participants by meal type.
