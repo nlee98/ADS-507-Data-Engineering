@@ -1,4 +1,4 @@
-# ADS-507-Data-Engineering
+# ADS 507: Practical Data Engineering
 
 ## Repository Contents:
 _Jupyter Notebook_
