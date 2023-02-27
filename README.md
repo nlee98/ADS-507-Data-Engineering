@@ -1,4 +1,4 @@
-# ADS 507: Practical Data Engineering
+# Supermarket Orders, Invoices, and Sales
 
 ## Repository Contents:
 _Jupyter Notebook_
