@@ -9,7 +9,7 @@ _Executable Python Script_
 * [Invoices.CSV](https://raw.githubusercontent.com/nlee98/ADS-507-Data-Engineering/main/Invoices.csv)
 * [OrderLeads.CSV](https://raw.githubusercontent.com/nlee98/ADS-507-Data-Engineering/main/OrderLeads.csv)
 * [SalesTeam.CSV](https://raw.githubusercontent.com/nlee98/ADS-507-Data-Engineering/main/SalesTeam.csv) 
-* [Tableau Dashboard](https://public.tableau.com/app/profile/christine1435/viz/WebTrafficDashboardDigitalMarketingVOTD_16774150755110/Performance?publish=yes) and a packaged Tableau Workbook
+* [Tableau Dashboard](https://public.tableau.com/app/profile/christine1435/viz/SupermarketOrdersInvoicesandSalesDashboard/Dashboard?publish=yes) and a packaged Tableau Workbook
 
 ## Pipeline Deployment:
 1. Download either the [Jupyter Notebook](https://raw.githubusercontent.com/nlee98/ADS-507-Data-Engineering/main/ADS-507_Final_Notebook.ipynb) or [Python Script](https://raw.githubusercontent.com/nlee98/ADS-507-Data-Engineering/main/ADS-507_Final_Notebook.py).
@@ -17,7 +17,7 @@ _Executable Python Script_
   *_Note:_ The pipeline assumes that the server is "localhost" and that the port number is 3306. If the server name or port number differs, the script will need to be modified.
 3. When prompted, enter your MySQL username (usually, "root") and your corresponding MySQL password.
 4. Let the pipeline run to completion.
-5. To view an example [Tableau Dashboard](https://public.tableau.com/app/profile/christine1435/viz/WebTrafficDashboardDigitalMarketingVOTD_16774150755110/Performance?publish=yes) that can be created from the output, click on the Tableau link here, or download the Tableau workbook above.
+5. To view an example [Tableau Dashboard](https://public.tableau.com/app/profile/christine1435/viz/SupermarketOrdersInvoicesandSalesDashboard/Dashboard?publish=yes) that can be created from the output, click on the Tableau link here, or download the Tableau workbook above.
 
 ## Pipeline Monitoring:
 * Print statements, such as "print('Invoice Table Created!)," are included at critical points to confirm that the pipeline is functioning as expected.
